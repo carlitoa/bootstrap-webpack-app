@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Offcanvas Sidebar -->
-    <div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas offcanvas-start" id="menu">
       <div class="offcanvas-header">
         <h3 class="offcanvas-title">Components</h3>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -21,10 +21,18 @@
       </div>
     </div>
 
-    <!-- Button to open the offcanvas sidebar -->
-    <button class="btn btn-primary mt-4 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <h1>Custom</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-1">
+          <!-- Button to open the offcanvas sidebar -->
+          <button class="btn btn-primary mt-4 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="col-sm-11">
+          <h1>Custom</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
