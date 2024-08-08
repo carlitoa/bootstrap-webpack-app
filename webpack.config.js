@@ -8,9 +8,12 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/main.js',
+  entry: {
+    default: path.resolve(__dirname, './src/js/default.js'),
+    custom: path.resolve(__dirname, './src/js/custom.js'),
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
@@ -19,7 +22,18 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({ 
+      template: path.resolve(__dirname, './src/index.html'),
+      filename: 'index.html',
+      inject: true,
+      chunk: 'default',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: path.resolve(__dirname, './src/custom.html'),
+      filename: 'custom.html',
+      inject: true,
+      chunk: 'custom',
+    }),
     new miniCssExtractPlugin(),
     new BrowserSyncPlugin({
       host: 'localhost',
