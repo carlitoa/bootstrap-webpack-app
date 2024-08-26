@@ -11,6 +11,7 @@ module.exports = {
   entry: {
     default: path.resolve(__dirname, './src/js/default.js'),
     custom: path.resolve(__dirname, './src/js/custom.js'),
+    menubar: path.resolve(__dirname, './src/js/menubar.js')
   },
   output: {
     filename: '[name].bundle.js',
@@ -33,6 +34,12 @@ module.exports = {
       filename: 'custom.html',
       inject: true,
       chunk: 'custom',
+    }),
+    new HtmlWebpackPlugin({ 
+      template: path.resolve(__dirname, './src/menubar.html'),
+      filename: 'menubar.html',
+      inject: true,
+      chunk: 'menubar',
     }),
     new miniCssExtractPlugin(),
     new BrowserSyncPlugin({
