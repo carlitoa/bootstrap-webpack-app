@@ -23,80 +23,98 @@
     </button>
   </li>
   <li>
-    <button class="hsi_wv_copy_object_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiCopyButton"
-      data-section="stateTransition" title="Copy Object Creates copy of this CaseWVH."
-      data-command="ObjectViewerSet.CopyObjectCommand.3.true" disabled="">
+    <button class="hsi_wv_copy_object_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiCopyButton" data-section="stateTransition" title="Copy Object Creates copy of this CaseWVH." data-command="ObjectViewerSet.CopyObjectCommand.3.true">
       <label>Copy Object</label>
     </button>
   </li>
-  <li><button class="hsi_wv_refresh_object_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiRefreshButton" data-section="stateTransition"
-      title="Refresh(F5) Retrieves updated information for this CaseWVH."
-      data-command="ObjectViewerSet.RefreshObjectCommand.0.true"><label>Refresh</label></button></li>
-  <li><button class="hsi_wv_history_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiHistoryButton" data-section="history" title="History View history and events related to this object."
-      data-command="ObjectViewerSet.ShowHistoryCommand.0.false"><label>History</label></button></li>
-  <li><button class="hsi_wv_documents_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiDocumentButton"
-      data-section="documents" title="Documents"><label>Documents</label>
-      <div></div>
+  <li>
+    <button class="hsi_wv_refresh_object_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton" id="hsiRefreshButton" data-section="stateTransition" title="Refresh(F5) Retrieves updated information for this CaseWVH." data-command="ObjectViewerSet.RefreshObjectCommand.0.true">
+      <label>Refresh</label>
+    </button>
+  </li>
+  <li>
+    <button class="hsi_wv_history_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton" id="hsiHistoryButton" data-section="history" title="History View history and events related to this object." data-command="ObjectViewerSet.ShowHistoryCommand.0.false">
+      <label>History</label>
+    </button>
+  </li>
+  <li>
+    <button class="hsi_wv_documents_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiDocumentButton" data-section="documents" title="Documents">
+      <label>Documents</label>
     </button>
     <ul class="hidden">
-      <li><button class="hsi_wv_documents_btn ui-state-default ui-corner-all hsi_iconButton"
-          id="hsiDocumentsContainerButton" data-section="documents"
-          title="Documents View attached documents related to this object."
-          data-command="ObjectViewerSet.DisplayAttachedDocumentsCommand.0.false"><label>Documents</label></button></li>
-      <li><button class="hsi_wv_compose_document_btn ui-state-default ui-corner-all hsi_iconButton"
-          id="hsiDocumentCompositionButton" data-section="documents"
-          title="Compose Document Composes a new document from a Document Composition Template."
-          data-command="ObjectViewerSet.ComposeDocumentCommand.0.false"><label>Compose</label></button></li>
-      <li><button class="hsi_wv_document_upload_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiUploadButton"
-          data-section="documents"
-          title="Upload Import and attach a new document to this object, providing keywords and other information."
-          data-command="ObjectViewerSet.UploadCommand.0.false"><label>Upload</label></button></li>
-      <li><button class="hsi_wv_folders_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton"
-          id="hsiFoldersButton" data-section="documents" title="View attached folders related to this object."
-          data-command="ObjectViewerSet.DisplayAssociatedOnBaseFoldersCommand.0.false"
-          disabled=""><label>Folders</label></button></li>
+      <li>
+        <button class="hsi_wv_documents_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiDocumentsContainerButton" data-section="documents" title="Documents View attached documents related to this object." data-command="ObjectViewerSet.DisplayAttachedDocumentsCommand.0.false">
+          <label>Documents</label>
+        </button>
+      </li>
+      <li>
+        <button class="hsi_wv_compose_document_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiDocumentCompositionButton" data-section="documents" title="Compose Document Composes a new document from a Document Composition Template." data-command="ObjectViewerSet.ComposeDocumentCommand.0.false">
+          <label>Compose</label>
+        </button>
+      </li>
+      <li>
+        <button class="hsi_wv_document_upload_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiUploadButton" data-section="documents" title="Upload Import and attach a new document to this object, providing keywords and other information." data-command="ObjectViewerSet.UploadCommand.0.false">
+          <label>Upload</label>
+        </button>
+      </li>
+      <li>
+        <button class="hsi_wv_folders_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton" id="hsiFoldersButton" data-section="documents" title="View attached folders related to this object." data-command="ObjectViewerSet.DisplayAssociatedOnBaseFoldersCommand.0.false" disabled="">
+          <label>Folders</label>
+        </button>
+      </li>
     </ul>
   </li>
-  <li><button class="hsi_wv_forms_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiFormsButton" data-section="documents" title="Forms Create a form."
-      data-command="ObjectViewerSet.CreateEFormCommand.0.false" disabled=""><label>Forms</label></button>
+  <li>
+    <button class="hsi_wv_forms_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton" id="hsiFormsButton" data-section="documents" title="Forms Create a form." data-command="ObjectViewerSet.CreateEFormCommand.0.false">
+      <label>Forms</label>
+    </button>
   </li>
-  <li><button class="hsi_wv_discussions_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiDiscussionsButton" data-section="discussions"
-      title="Discussion View discussion threads that have been created on this object."
-      data-command="ObjectViewerSet.ShowCollaborationThreadsCommand.0.false"
-      disabled=""><label>Discussion</label></button></li>
-  <li><button class="hsi_wv_print_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiPrintButton" data-section="print" title="Print(Ctrl+P) Print the active view."
-      data-command="ObjectViewerSet.PrintObjectCommand.1.true"><label>Print</label></button></li>
-  <li class="hsi_floatRight"><button class="hsi_wv_last_object_btn ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiNavigateLastButton" data-section="navigation" title="Last Open the last CaseWVH in the list."
-      data-command="ObjectViewerSet.NavigateLastCommand.1.false"><label>Last Object</label></button></li>
-  <li class="hsi_floatRight"><button class="hsi_wv_next_object_btn ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiNavigateNextButton" data-section="navigation" title="Next Open the next CaseWVH in the list."
-      data-command="ObjectViewerSet.NavigateNextCommand.1.false"><label>Next Object</label></button></li>
-  <li class="hsi_floatRight"><button class="hsi_wv_previous_object_btn ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiNavigatePreviousButton" data-section="navigation" title="Previous Open the previous CaseWVH in the list."
-      data-command="ObjectViewerSet.NavigatePreviousCommand.1.false"><label>Previous Object</label></button></li>
-  <li class="hsi_floatRight"><button class="hsi_wv_first_object_btn ui-state-default ui-corner-all hsi_iconButton"
-      id="hsiNavigateFirstButton" data-section="navigation" title="First Open the first CaseWVH in the list."
-      data-command="ObjectViewerSet.NavigateFirstCommand.1.false"><label>First Object</label></button></li>
-  <li class="hsi_wv_more_btn"><button class="ui-state-default ui-corner-all hsi_iconButton" id="hsiCollapseButton"
-      title="Show more options."><label>More</label>
+  <li>
+    <button class="hsi_wv_discussions_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton" id="hsiDiscussionsButton" data-section="discussions" title="Discussion View discussion threads that have been created on this object." data-command="ObjectViewerSet.ShowCollaborationThreadsCommand.0.false">
+      <label>Discussion</label>
+    </button>
+  </li>
+  <li>
+    <button class="hsi_wv_print_btn hsi_toolbar_section ui-state-default ui-corner-all hsi_iconButton" id="hsiPrintButton" data-section="print" title="Print(Ctrl+P) Print the active view." data-command="ObjectViewerSet.PrintObjectCommand.1.true">
+      <label>Print</label>
+    </button>
+  </li>
+  <li class="hsi_floatRight">
+    <button class="hsi_wv_last_object_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiNavigateLastButton" data-section="navigation" title="Last Open the last CaseWVH in the list." data-command="ObjectViewerSet.NavigateLastCommand.1.false">
+      <label>Last Object</label>
+    </button>
+  </li>
+  <li class="hsi_floatRight">
+    <button class="hsi_wv_next_object_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiNavigateNextButton" data-section="navigation" title="Next Open the next CaseWVH in the list." data-command="ObjectViewerSet.NavigateNextCommand.1.false">
+      <label>Next Object</label>
+    </button>
+  </li>
+  <li class="hsi_floatRight">
+    <button class="hsi_wv_previous_object_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiNavigatePreviousButton" data-section="navigation" title="Previous Open the previous CaseWVH in the list." data-command="ObjectViewerSet.NavigatePreviousCommand.1.false">
+      <label>Previous Object</label>
+    </button>
+  </li>
+  <li class="hsi_floatRight">
+    <button class="hsi_wv_first_object_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiNavigateFirstButton" data-section="navigation" title="First Open the first CaseWVH in the list." data-command="ObjectViewerSet.NavigateFirstCommand.1.false">
+      <label>First Object</label>
+    </button>
+  </li>
+  <li class="hsi_wv_more_btn">
+    <button class="ui-state-default ui-corner-all hsi_iconButton" id="hsiCollapseButton" title="Show more options."><label>More</label>
       <div></div>
     </button>
     <ul class="hidden">
-      <li data-alwayscollapse="true"><button
-          class="hsi_wv_notification_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiUserNotificationButton"
-          title="Manage notification subscriptions."><label>Notifications</label>
+      <li data-alwayscollapse="true">
+        <button class="hsi_wv_notification_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiUserNotificationButton" title="Manage notification subscriptions.">
+          <label>Notifications</label>
           <div></div>
         </button>
         <ul class="hidden">
-          <li><button class="hsi_wv_subscription_btn ui-state-default ui-corner-all hsi_iconButton"
-              id="hsiUserSubscriptionButton" title="Subscribe to notifications."
-              data-command="ObjectViewerSet.SubscribeToAllChangesCommand.0.true"><label>Subscribe</label></button></li>
+          <li>
+            <button class="hsi_wv_subscription_btn ui-state-default ui-corner-all hsi_iconButton" id="hsiUserSubscriptionButton" title="Subscribe to notifications." data-command="ObjectViewerSet.SubscribeToAllChangesCommand.0.true">
+              <label>Subscribe</label>
+            </button>
+          </li>
         </ul>
       </li>
     </ul>

@@ -1,4 +1,5 @@
 // Import our custom CSS
+import '../scss/canopy-menubar.scss'
 import '../scss/menubar.scss'
 
 // Import all of Bootstrap's JS
